@@ -1,0 +1,93 @@
+.container {
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(153deg, rgb(116, 56, 216), rgb(18, 150, 170) 74%);
+  padding: 5px;
+  color: white;
+}
+
+.main {
+  width: 390px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.description {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.code {
+  background: #fafafa;
+  color: grey;
+  border-radius: 5px;
+  padding: 20px;
+  font: small Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/* Spinner CSS */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(9, 109, 190);
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 1rem; /* Equivalent to p-4 */
+  width: 20rem; /* Equivalent to w-80 */
+  height: 12rem; /* Equivalent to h-48 */
+  margin: 0 auto; /* Equivalent to mx-auto */
+  background-color: white; /* Equivalent to bg-white */
+  border-radius: 0.75rem; /* Equivalent to rounded-xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
+  color: black; /* Equivalent to text-black */
+  display: flex; /* Equivalent to flex */
+  flex-direction: column; /* Equivalent to flex-col */
+  justify-content: center; /* Equivalent to justify-center */
+  align-items: center; /* Equivalent to items-center */
+}
+
+.button {
+  margin-top: 1rem;
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* fully rounded */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  transform: translateY(-2px);
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+.paragraph {
+  font-weight: bold;
+}
+
